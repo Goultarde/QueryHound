@@ -1,4 +1,4 @@
 To use it, just type `python3 bloodhound_query.py`. 
 This will ask you for everything that is needed to create your JSON file.
 
-![5bd4a2d5-3273-4266-aa9c-5682e3371137](https://github.com/user-attachments/assets/a2937d94-cb7f-4fd7-9ba4-6d1a445dd3f3)
+![c93a49ad-1f17-41e6-aef5-ba3a996c43fb](https://github.com/user-attachments/assets/b38871d0-6576-4fe3-b5ef-4bef7b1c417d)
