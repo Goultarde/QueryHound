@@ -1,17 +1,61 @@
-# QueryHound (beta)
-## Summary
+<div align="center">
+  <h1>
+    <img alt="QueryHound Logo" src="https://github.com/user-attachments/assets/b38871d0-6576-4fe3-b5ef-4bef7b1c417d" width="400" />
+  </h1>
+  <br>
+</div>
 
-QueryHound is a Python executable that allows you to create custom queries in JSON format for BloodHound.  
-It was created for Exegol ([https://github.com/ThePorgs/Exegol](https://github.com/ThePorgs/Exegol)), so it can be placed in `/home/<user>/.exegol/my-resources/setup/bloodhound/customqueries_merge` and directly generate compatible JSON files.  
+# QueryHound
 
-### Improvements
+## Overview
 
-* Create a more graphical interface
+**QueryHound** is a Python tool designed to simplify the creation of custom BloodHound queries in JSON format.  
+It was developed as part of the [Exegol](https://github.com/ThePorgs/Exegol) project and can be conveniently placed in:  
+ `/home/<user>/.exegol/my-resources/setup/bloodhound/customqueries_merge`  
+from where it directly generates compatible JSON files ready for use with BloodHound.
+> [!CAUTION]
+> **This project is currently in Beta and may contain bugs.**  
+> Your feedback is highly appreciated. please feel free to open issues or submit pull requests to help improve it!  
+
 
 ---
 
-To use it, just type `python3 bloodhound_query.py`. 
-This will ask you for everything that is needed to create your JSON file.  
-For more personal use, consult the help with the `-h` option.
+## Features
 
-![c93a49ad-1f17-41e6-aef5-ba3a996c43fb](https://github.com/user-attachments/assets/b38871d0-6576-4fe3-b5ef-4bef7b1c417d)
+- Interactive prompt to create, edit, remove, and manage BloodHound queries  
+- Supports multiple sub-queries with "final" flags  
+- Easy loading and saving of queries in JSON files  
+- Optional graphical-like interface for query summaries (via pager)  
+- CLI options for quick actions and streamlined workflow
+
+---
+
+## Installation & Usage
+
+Clone or download the repository, then simply run:
+
+```bash
+python3 bloodhound_query.py
+````
+
+You will be guided step-by-step through query creation and management.
+
+For more details and command-line options, use:
+
+```bash
+python3 bloodhound_query.py -h
+```
+
+---
+
+## Planned Improvements
+
+* Develop a more graphical (GUI) interface for easier query creation
+* Enhance validation and error handling
+* Add templates for common BloodHound query scenarios
+
+---
+
+<div align="center">
+  <em>Made for Exegol & BloodHound users</em>
+</div>
