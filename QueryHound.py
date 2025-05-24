@@ -17,10 +17,10 @@ def load_existing_queries_from_file(file_path):
                 data = json.load(file)
                 return data.get("queries", [])
             except json.JSONDecodeError:
-                print(f"⚠️ Le fichier {file_path} n'est pas un JSON valide.")
+                print(f"Le fichier {file_path} n'est pas un JSON valide.")
                 return []
     else:
-        print(f"⚠️ Fichier non trouvé : {file_path}")
+        print(f"Fichier non trouvé : {file_path}")
         return []
 
 def choose_load_mode():
@@ -36,17 +36,17 @@ def choose_load_mode():
             if os.path.exists("custom_queries.json"):
                 return load_existing_queries_from_file("custom_queries.json")
             else:
-                print("⚠️ Fichier custom_queries.json introuvable. Veuillez choisir une autre option.")
+                print("Fichier custom_queries.json introuvable. Veuillez choisir une autre option.")
         elif choice == "2":
             path = get_user_input("Chemin du fichier JSON à charger : ").strip()
             if os.path.exists(path):
                 return load_existing_queries_from_file(path)
             else:
-                print(f"⚠️ Fichier non trouvé : {path}. Veuillez choisir une autre option.")
+                print(f"Fichier non trouvé : {path}. Veuillez choisir une autre option.")
         elif choice == "3":
             return []
         else:
-            print("❌ Choix invalide. Réessaye.")
+            print("Choix invalide. Réessaye.")
 
 def display_queries_pager(queries):
     output = "\nSummary of queries to be generated:\n"
