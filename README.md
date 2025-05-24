@@ -53,6 +53,8 @@ python3 bloodhound_query.py -h
 * Develop a more graphical (GUI) interface for easier query creation
 * Enhance validation and error handling
 * Add templates for common BloodHound query scenarios
+### Bloodhound-ce  
+For a BloodHound-CE integration, you should consider this script : [import-custom-bloodhound-queries](https://github.com/piraija/import-custom-bloodhound-queries.git) 
 
 ---
 
